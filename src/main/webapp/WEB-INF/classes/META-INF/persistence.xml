@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="parks" >
+        <!-- we can't use the OpenShift JTA handler from the container because it can't see the postgis.jar and we have no
+        good way to add it in time for the demo -->
+        <properties>
+
+            <property name="hibernate.connection.url" value="jdbc:postgresql://527bc7aaf3026b994a0001a5-winning.apps.reinvent.onopenshift.com/parks"/>
+            <property name="hibernate.connection.username" value="admintmvigxx"/>
+            <property name="hibernate.connection.password" value="mJYDiWLZDusn"/>
+
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.spatial.dialect.postgis.PostgisDialect"/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>

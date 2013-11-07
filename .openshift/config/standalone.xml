@@ -63,22 +63,22 @@
 				<append value="true" />
 			</periodic-rotating-file-handler>
 			<logger category="com.arjuna">
-				<level name="WARN" />
+				<level name="ERROR" />
 			</logger>
 			<logger category="org.apache.tomcat.util.modeler">
-				<level name="WARN" />
+				<level name="ERROR" />
 			</logger>
 			<logger category="sun.rmi">
-				<level name="WARN" />
+				<level name="ERROR" />
 			</logger>
 			<logger category="jacorb">
-				<level name="WARN" />
+				<level name="ERROR" />
 			</logger>
 			<logger category="jacorb.config">
 				<level name="ERROR" />
 			</logger>
 			<root-logger>
-				<level name="INFO" />
+				<level name="ERROR" />
 				<handlers>
 					<!--handler name="CONSOLE"/ -->
 					<handler name="FILE" />

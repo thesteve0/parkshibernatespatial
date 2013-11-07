@@ -1,3 +1,4 @@
-The OpenShift `jbosseap` cartridge documentation can be found at:
+This is the demo application that uses Hibernate Spatial + Postgis to run the national park application
 
-https://github.com/openshift/origin-server/tree/master/cartridges/openshift-origin-cartridge-jbosseap/README.md
+It should be run on a scalable application with medium to large gears
+
