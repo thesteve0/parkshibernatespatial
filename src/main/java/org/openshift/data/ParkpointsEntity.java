@@ -16,7 +16,7 @@ import org.hibernate.annotations.Type;
  * Time: 10:05 AM
  * To change this template use File | Settings | File Templates.
  */
-@javax.persistence.Table(name = "parkpoints", schema = "public", catalog = "jpatestoo")
+@javax.persistence.Table(name = "parkpoints", schema = "public", catalog = "parks")
 @Entity
 public class ParkpointsEntity {
     private int parkid;
