@@ -6,7 +6,7 @@
         good way to add it in time for the demo -->
         <properties>
 
-            <property name="hibernate.connection.url" value="jdbc:postgresql://527bc7aaf3026b994a0001a5-winning.apps.reinvent.onopenshift.com/parks"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://527bc7aaf3026b994a0001a5-winning.apps.reinvent.onopenshift.com:44836/parks"/>
             <property name="hibernate.connection.username" value="admintmvigxx"/>
             <property name="hibernate.connection.password" value="mJYDiWLZDusn"/>
 
