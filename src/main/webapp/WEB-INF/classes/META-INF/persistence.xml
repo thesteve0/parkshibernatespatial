@@ -16,6 +16,16 @@
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
             <property name="hbm2ddl.auto" value="update"/>
+
+            <!-- connection pooling -->
+            <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider"/>
+            <property name="hibernate.c3p0.acquire_increment" value="2"/>
+            <property name="hibernate.c3p0.idle_test_period" value="60"/>
+            <property name="hibernate.c3p0.max_size" value="95"/>
+            <property name="hibernate.c3p0.max_statements" value="0"/>
+            <property name="hibernate.c3p0.min_size" value="6"/>
+            <property name="hibernate.c3p0.timeout" value="60"/>
+            <property name="hibernate.c3p0.validate" value="false"/>
         </properties>
     </persistence-unit>
 </persistence>
