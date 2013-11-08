@@ -18,7 +18,7 @@
             <property name="hbm2ddl.auto" value="update"/>
 
             <!-- connection pooling -->
-            <property name="hibernate.connection.provider_class" value="org.hibernate.connection.C3P0ConnectionProvider"/>
+            <property name="hibernate.connection.provider_class" value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider"/>
             <property name="hibernate.c3p0.acquire_increment" value="2"/>
             <property name="hibernate.c3p0.idle_test_period" value="60"/>
             <property name="hibernate.c3p0.max_size" value="95"/>

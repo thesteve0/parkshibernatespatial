@@ -82,7 +82,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-c3p0</artifactId>
-            <version>4.3.0.Beta5</version>
+            <version>4.2.7.SP1</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
