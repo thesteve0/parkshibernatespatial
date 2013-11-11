@@ -20,12 +20,14 @@
             <!-- connection pooling -->
             <property name="hibernate.connection.provider_class" value="org.hibernate.service.jdbc.connections.internal.C3P0ConnectionProvider"/>
             <property name="hibernate.c3p0.acquire_increment" value="5"/>
-            <property name="hibernate.c3p0.idle_test_period" value="60"/>
-            <property name="hibernate.c3p0.max_size" value="180"/>
-            <property name="hibernate.c3p0.max_statements" value="0"/>
+            <property name="hibernate.c3p0.idle_test_period" value="3000"/>
             <property name="hibernate.c3p0.min_size" value="30"/>
-            <property name="hibernate.c3p0.timeout" value="60"/>
+            <property name="hibernate.c3p0.max_size" value="195"/>
+            <property name="hibernate.c3p0.max_statements" value="5"/>
+            <property name="hibernate.c3p0.timeout" value="600"/>
             <property name="hibernate.c3p0.validate" value="false"/>
+            <!-- added by SIP after reading on the config page -->
+            <property name="hibernate.c3p0.num_helper_threads" value="10"/>
         </properties>
     </persistence-unit>
 </persistence>
