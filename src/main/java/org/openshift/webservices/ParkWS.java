@@ -51,6 +51,7 @@ public class ParkWS {
         if (templist != null && templist.size() > 0){
             allParksList = processQueryResults(templist);
         }
+
         return allParksList;
     }
 
