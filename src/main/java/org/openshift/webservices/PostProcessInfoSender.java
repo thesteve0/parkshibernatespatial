@@ -26,6 +26,7 @@ public class PostProcessInfoSender implements PostProcessInterceptor{
 
     @Override
     public void postProcess(ServerResponse serverResponse) {
+        logger.error("before parameter grab");
         MultivaluedMap<String, Object> headers = serverResponse.getMetadata();
         logger.error("READ ME:: " + headers.get(HttpHeaderNames.CONTENT_LENGTH));
 
