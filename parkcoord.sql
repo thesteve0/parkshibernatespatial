@@ -1,3 +1,23 @@
+
+CREATE TABLE parkpoints
+(
+  parkid serial NOT NULL,
+  name character varying(256),
+  the_geom geometry(Geometry,4326),
+  CONSTRAINT parkpoints_pk PRIMARY KEY (parkid )
+)
+WITH (
+  OIDS=FALSE
+);
+
+CREATE INDEX geom_index_parkpoints
+  ON parkpoints
+  USING gist
+  (the_geom );
+
+
+
+
 Insert into parkpoints (name, the_geom) VALUES ('Abraham Lincoln Birthplace National Historical Park', ST_GeomFromText('POINT(-85.7302 37.5332)', 4326));
 Insert into parkpoints (name, the_geom) VALUES ('Abraham Lincoln National Cemetery', ST_GeomFromText('POINT(-88.12595 41.3896)', 4326));
 Insert into parkpoints (name, the_geom) VALUES ('Acadia National Park', ST_GeomFromText('POINT(-68.04902 44.454)', 4326));
